@@ -1,0 +1,5 @@
+name: MBTA routes module
+description: Custom module for MBTA routes with API calls.
+type: module
+core: 8.x
+package: MBTA

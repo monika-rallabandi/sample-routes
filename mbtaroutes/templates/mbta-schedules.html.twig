@@ -1,0 +1,6 @@
+<table>
+  <tr><th>S.No</th><th>Arrival</th><th>Departure</th></tr>
+  {% for route in items %}
+    <tr><th>{{ loop.index }}</th><th>{{ route.attributes.arrival_time }}</th><th>{{ route.attributes.departure_time }}</th></tr>
+  {% endfor %}
+</table>

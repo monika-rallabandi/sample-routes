@@ -1,0 +1,11 @@
+{% for item in items %}
+  <div>
+  {% for route in item %}
+    <div class="routes-title" style="background-color:#{{ route.attributes.color }};">
+      <a href="/mbta/{{ route.id }}/schedules">
+      {{ route.attributes.direction_destinations[0] }} - {{ route.attributes.direction_destinations[1] }}
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+{% endfor %}

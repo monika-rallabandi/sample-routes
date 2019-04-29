@@ -1,0 +1,15 @@
+mbtaroutes.mbta_routes:
+  path: '/mbta/routes'
+  defaults:
+    _controller: '\Drupal\mbtaroutes\Controller\MbtaroutesController::page'
+    _title: 'MBTA Routes'
+  requirements:
+    _permission: 'access content'
+    
+mbtaroutes.mbta_schedules:
+  path: '/mbta/{routeid}/schedules'
+  defaults:
+    _controller: '\Drupal\mbtaroutes\Controller\MbtaschedulesController::page'
+    _title: 'MBTA Schedules'
+  requirements:
+    _permission: 'access content'
